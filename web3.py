@@ -17,7 +17,7 @@ abi = '[{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"s
 abi = json.loads(abi)
 
 #Address of the code
-address = '0xc3dbf84Abb494ce5199D5d4D815b10EC29529ff8'
+address = '0xb97b7eCfD153b60eAD3055495A83732b474F2d7b'
 
 dai = w3.eth.contract(address=address, abi=abi)
 print(dai.functions.totalSupply().call())
