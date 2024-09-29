@@ -22,7 +22,7 @@ address = '0xb97b7eCfD153b60eAD3055495A83732b474F2d7b'
 dai = w3.eth.contract(address=address, abi=abi)
 print(dai.functions.totalSupply().call())
 
-transaction = dai.functions.transfer('Receviers account address', ).buildTransaction({'chainId': 4, 'gas':70000, 'nonce': w3.eth.getTransactionCount('my_account._address')})
+transaction = dai.functions.transfer('Receviers account address', 0x7073d5C52f0bEa415a1A3F62E3b2F6eBD3bc82ED).buildTransaction({'chainId': 4, 'gas':70000, 'nonce': w3.eth.getTransactionCount('my_account._address')})
 signed_txn = w3.eth.account.signTransaction(transaction, 'my_account._private_key')
 txn_hash = w3.eth.sendRawTransaction(signed_txn.rawTransaction)
 print(txn_hash)
