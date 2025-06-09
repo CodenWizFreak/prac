@@ -1,4 +1,6 @@
-//C-sharp sum number
+//C-sharp sum number 
+//1+2=3
+
 using System;
 
 class Program
